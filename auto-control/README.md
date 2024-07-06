@@ -1,6 +1,6 @@
 # Módulo USER-CONTROL
 
-Este proyecto implementa una máquina de estados utilizando Mbed, sin el uso de interrupciones y sin estructuras complejas. Los estados definidos son `OFF`, `MONITOR` y `PANIC`, y el cambio entre estos estados se controla a través de la recepción de caracteres específicos por el puerto serie utilizando `UnBufferedSerial`.
+Este proyecto se implementa utilizando Mbed, sin el uso de interrupciones y sin estructuras complejas. Los estados definidos son `OFF`, `MONITOR` y `PANIC`, y el cambio entre estos estados se controla a través de la recepción de caracteres específicos por el puerto serie utilizando `UnBufferedSerial`.
 
 ## Documentación
 
