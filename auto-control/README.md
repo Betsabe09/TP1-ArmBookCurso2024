@@ -40,6 +40,6 @@ Puedes encontrar la documentación completa generada por Doxygen [aquí](https:/
    - La recepción de caracteres por el puerto serie controla los cambios de estado.
 
 2. **Medición de Tiempo:**
-   - Para medir el tiempo, se utiliza `chrono::duration_cast<chrono::milliseconds>(timer.elapsed_time()).count()`, que funciona de manera similar a `millis()` en Arduino.
+   - Para medir el tiempo, se utiliza `chrono::duration_cast<chrono::seconds>(timer.elapsed_time()).count()`, que funciona de manera similar a `millis()` en Arduino, pero obteniendo valores en segundos.
    - Esta medición es crucial para determinar el tiempo transcurrido en el estado MONITOR y para gestionar el parpadeo del LED1 y el buzzer en el estado PANIC.
    - Se optó por utilizar esa forma de medir el tiempo para no utilizar ningun temporizador que pudiera ser bloqueante.
