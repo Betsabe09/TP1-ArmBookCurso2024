@@ -1,3 +1,5 @@
-# user-control
+# Módulo USER-CONTROL
 
-Programa del control del usuario que contiene los botones para activar y desactivar el sistema.
+## Documentación
+
+Puedes encontrar la documentación completa [aquí](https://betsabe09.github.io/TP1-ArmBookCurso2024/auto-control/Docs/html/index.html).
