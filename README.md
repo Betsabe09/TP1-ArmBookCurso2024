@@ -48,4 +48,4 @@ Este sistema proporciona una capa adicional de seguridad para situaciones de rob
 - **UART:** Comunicación entre módulos.
 - **RELÉ:** Energiza o desenergiza el motor del vehículo.
 
-![Diagrama del sistema](Images/Diagrama en bloques del sistema.png)
+![Diagrama del sistema](Images/Diagrama.png)
