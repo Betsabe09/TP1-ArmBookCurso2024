@@ -26,6 +26,8 @@ El sistema consiste en la comunicación entre dos módulos: uno que portará el 
 
 Este sistema proporciona una capa adicional de seguridad para situaciones de robo, ofreciendo una respuesta rápida y efectiva para detener el vehículo y proteger al usuario.
 
+Para más información de cada uno de los módulos, ingrese en los proyectos adjuntos de cada uno.
+
 ## Plataformas de Desarrollo
 - NUCLEO-F091RC
 
@@ -51,5 +53,3 @@ Este sistema proporciona una capa adicional de seguridad para situaciones de rob
 - **RELÉ:** Energiza o desenergiza el motor del vehículo.
 
 ![Diagrama del sistema](Images/Diagrama.png)
-
-Para más información de cada uno de los módulos, ingrese en los proyectos adjuntos de cada uno.
