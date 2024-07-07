@@ -27,11 +27,11 @@ Este sistema proporciona una capa adicional de seguridad para situaciones de rob
 ## Plataformas de Desarrollo
 - NUCLEO-F091RC
 
-![Diagrama del sistema](images/diagrama.png)
+![NUCLEO](Images/NUCLEO-F091RC.png)
 
 - Módulo de desarrollo para STM32F103C8T6 “Blue Pill” (similar al NUCLEO-F103RB)
 
-![Diagrama del sistema](images/diagrama.png)
+![BLUE PILL](Images/BLUE-PILL.jpg)
 
 ## Periféricos a Utilizar del Módulo de Usuario
 - **BOTÓN 1:** Activa el estado de monitoreo de seguridad.
