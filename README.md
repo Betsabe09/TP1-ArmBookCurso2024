@@ -49,3 +49,5 @@ Este sistema proporciona una capa adicional de seguridad para situaciones de rob
 - **RELÉ:** Energiza o desenergiza el motor del vehículo.
 
 ![Diagrama del sistema](Images/Diagrama.png)
+
+Para más información de cada uno de los módulos, ingrese en los proyectos adjuntos de cada uno.
