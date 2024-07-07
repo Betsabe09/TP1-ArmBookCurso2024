@@ -1,7 +1,7 @@
 /**
  * @file main.cpp
  * @brief Programa para manejar el estado del sistema de seguridad dentro del vehículo. Abre o cierra un relé según el estado.
- * @author Betsabe Ailen Rodriguez
+ * @author Betsabe Ailen Rodriguez.
  */
 
 //=====[Librerías]===========

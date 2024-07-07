@@ -1,12 +1,16 @@
 # Módulo USER-CONTROL
 
-Este proyecto se implementa utilizando Mbed, sin el uso de interrupciones y sin estructuras complejas. Los estados definidos son `OFF`, `MONITOR` y `PANIC`, y el cambio entre estos estados se controla a través de la presión de botones pull-up, que se activan con un valor false.
+## Alumno
+Betsabé Ailén Rodríguez
+
+betsabe.a.rodriguez@gmail.com
 
 ## Documentación
-
 Puedes encontrar la documentación completa generada por Doxygen [aquí](https://betsabe09.github.io/TP1-ArmBookCurso2024/user-control/Docs/html/index.html).
 
 ## Descripción
+
+Este proyecto se implementa utilizando Mbed, sin el uso de interrupciones y sin estructuras complejas. Los estados definidos son `OFF`, `MONITOR` y `PANIC`, y el cambio entre estos estados se controla a través de la presión de botones pull-up, que se activan con un valor false.
 
 ### Estados y Transiciones
 

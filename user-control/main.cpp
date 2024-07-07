@@ -1,7 +1,7 @@
 /**
  * @file main.cpp
  * @brief Programa que maneja el control de botones del usuario del sistema de seguridad.
- * @author BetsabeAilenRodriguez
+ * @author BetsabeAilenRodriguez.
  */
 
 //=====[Librerías]===========
