@@ -1,12 +1,16 @@
 # Módulo AUTO-CONTROL
 
-Este proyecto se implementa utilizando Mbed, sin el uso de interrupciones y sin estructuras complejas. Los estados definidos son `OFF`, `MONITOR` y `PANIC`, y el cambio entre estos estados se controla a través de la recepción de caracteres específicos por el puerto serie utilizando `UnBufferedSerial`.
+## Alumno
+Betsabé Ailén Rodríguez
+
+betsabe.a.rodriguez@gmail.com
 
 ## Documentación
-
 Puedes encontrar la documentación completa generada por Doxygen [aquí](https://betsabe09.github.io/TP1-ArmBookCurso2024/auto-control/Docs/html/index.html).
 
 ## Descripción
+
+Este proyecto se implementa utilizando Mbed, sin el uso de interrupciones y sin estructuras complejas. Los estados definidos son `OFF`, `MONITOR` y `PANIC`, y el cambio entre estos estados se controla a través de la recepción de caracteres específicos por el puerto serie utilizando `UnBufferedSerial`.
 
 ### Estados y Transiciones
 
