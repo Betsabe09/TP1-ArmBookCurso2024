@@ -12,6 +12,8 @@ Desarrollar un sistema adicional de seguridad que permita detener un automóvil 
 
 El sistema consiste en la comunicación entre dos módulos: uno que portará el conductor o usuario del vehículo y otro que estará instalado en el automóvil. Este sistema está diseñado para responder rápidamente a situaciones de robo o hurto deteniendo el vehículo mediante la interrupción de la energía que alimenta al motor. Los módulos se iniciarán en modo `OFF` por defecto, dado que la mayoría de los vehículos ya cuentan con sistemas de alarma incorporados. Sin embargo, este sistema ofrece una capa adicional de seguridad, especialmente útil en casos donde la llave del vehículo es sustraída por la fuerza o cuando el tiempo de reacción para activar una alarma es muy corto. La comunicación entre los módulos, inicialmente pensada para ser inalámbrica, será simulada mediante UART.
 
+Para más información de cada uno de los módulos, ingrese en los proyectos adjuntos de cada uno.
+
 ### Estado de `MONITOR`
 - **Activación:** Se activa presionando el botón 1 en el módulo del usuario.
 - **Operación:** El módulo del usuario envía datos y espera una respuesta del módulo del vehículo. Ambos módulos registran el tiempo de espera entre los datos recibidos. Si la conexión se pierde, el módulo del vehículo entra en el estado de `PANIC`. Si el módulo del usuario no recibe la respuesta dentro del tiempo predefinido, los LEDs del usuario parpadearán para indicar la falta de comunicación.
@@ -51,5 +53,3 @@ Este sistema proporciona una capa adicional de seguridad para situaciones de rob
 - **RELÉ:** Energiza o desenergiza el motor del vehículo.
 
 ![Diagrama del sistema](Images/Diagrama.png)
-
-Para más información de cada uno de los módulos, ingrese en los proyectos adjuntos de cada uno.
