@@ -1,0 +1,921 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Módulo USER-CONTROL: Referencia del archivo main.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Módulo USER-CONTROL
+   </div>
+   <div id="projectbrief">Manejo del módulo de control del sistema de seguridad que tendrá el usuario del vehículo</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#define-members">defines</a> &#124;
+<a href="#enum-members">Enumeraciones</a> &#124;
+<a href="#func-members">Funciones</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">Referencia del archivo main.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Programa que maneja el control de botones del usuario del sistema de seguridad.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &quot;mbed.h&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+defines</h2></td></tr>
+<tr class="memitem:a457d8bc178b560f8ebb3b734480f28e1" id="r_a457d8bc178b560f8ebb3b734480f28e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a457d8bc178b560f8ebb3b734480f28e1">elapsed_t_s</a>(x)&#160;&#160;&#160;chrono::duration_cast&lt;chrono::seconds&gt;((x).elapsed_time()).count()</td></tr>
+<tr class="memdesc:a457d8bc178b560f8ebb3b734480f28e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Macro para obtener el tiempo transcurrido en segundos desde el inicio de un timer.  <br /></td></tr>
+<tr class="separator:a457d8bc178b560f8ebb3b734480f28e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5876a500afedd2b40bac024b88f30afe" id="r_a5876a500afedd2b40bac024b88f30afe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5876a500afedd2b40bac024b88f30afe">TIME_FOR_OVERTIME</a>&#160;&#160;&#160;5</td></tr>
+<tr class="memdesc:a5876a500afedd2b40bac024b88f30afe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tiempo en segundos para considerar sobretiempo en la comunicación.  <br /></td></tr>
+<tr class="separator:a5876a500afedd2b40bac024b88f30afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a121a2898ce852c8dd4e1c52fa05920fa" id="r_a121a2898ce852c8dd4e1c52fa05920fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a121a2898ce852c8dd4e1c52fa05920fa">BLINK_TIME</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:a121a2898ce852c8dd4e1c52fa05920fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tiempo en segundos para el parpadeo de los LEDs en caso de error.  <br /></td></tr>
+<tr class="separator:a121a2898ce852c8dd4e1c52fa05920fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53d5515d5675d8c3efc6415fc76a68be" id="r_a53d5515d5675d8c3efc6415fc76a68be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53d5515d5675d8c3efc6415fc76a68be">LED_ON_OFF_TIME</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memdesc:a53d5515d5675d8c3efc6415fc76a68be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tiempo en segundos para indicar el estado OFF.  <br /></td></tr>
+<tr class="separator:a53d5515d5675d8c3efc6415fc76a68be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumeraciones</h2></td></tr>
+<tr class="memitem:a808e5cd4979462d3bbe3070d7d147444" id="r_a808e5cd4979462d3bbe3070d7d147444"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a808e5cd4979462d3bbe3070d7d147444">States</a> { <a class="el" href="#a808e5cd4979462d3bbe3070d7d147444aac132f2982b98bcaa3445e535a03ff75">OFF</a>
+, <a class="el" href="#a808e5cd4979462d3bbe3070d7d147444a92e8e1033650c9fd30199df2d6ec23e7">MONITOR</a>
+, <a class="el" href="#a808e5cd4979462d3bbe3070d7d147444a7f43a3db33f9e81462140f2b734e955b">PANIC</a>
+ }</td></tr>
+<tr class="memdesc:a808e5cd4979462d3bbe3070d7d147444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumera los posibles estados del sistema.  <a href="#a808e5cd4979462d3bbe3070d7d147444">Más...</a><br /></td></tr>
+<tr class="separator:a808e5cd4979462d3bbe3070d7d147444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a98824ed142147e7ceac3b25260c388c1" id="r_a98824ed142147e7ceac3b25260c388c1"><td class="memItemLeft" align="right" valign="top">DigitalIn&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98824ed142147e7ceac3b25260c388c1">button1</a> (D4, PullUp)</td></tr>
+<tr class="memdesc:a98824ed142147e7ceac3b25260c388c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Botón 1 en el pin D4, correspondiente a la activación de MONITOR.  <br /></td></tr>
+<tr class="separator:a98824ed142147e7ceac3b25260c388c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed845c31be3218d06e388ad3e0997992" id="r_aed845c31be3218d06e388ad3e0997992"><td class="memItemLeft" align="right" valign="top">DigitalIn&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed845c31be3218d06e388ad3e0997992">button2</a> (D5, PullUp)</td></tr>
+<tr class="memdesc:aed845c31be3218d06e388ad3e0997992"><td class="mdescLeft">&#160;</td><td class="mdescRight">Botón 2 en el pin D5, correspondiente a la activación de PANIC.  <br /></td></tr>
+<tr class="separator:aed845c31be3218d06e388ad3e0997992"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc0ad72d305e2eba32ced522304524f9" id="r_abc0ad72d305e2eba32ced522304524f9"><td class="memItemLeft" align="right" valign="top">DigitalIn&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc0ad72d305e2eba32ced522304524f9">button3</a> (D3, PullUp)</td></tr>
+<tr class="memdesc:abc0ad72d305e2eba32ced522304524f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Botón 3 en el pin D3, correspondiente a la activación de OFF.  <br /></td></tr>
+<tr class="separator:abc0ad72d305e2eba32ced522304524f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af02701d1ca210f5cee92c4a13f7b105d" id="r_af02701d1ca210f5cee92c4a13f7b105d"><td class="memItemLeft" align="right" valign="top">DigitalOut&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af02701d1ca210f5cee92c4a13f7b105d">led1</a> (D14)</td></tr>
+<tr class="memdesc:af02701d1ca210f5cee92c4a13f7b105d"><td class="mdescLeft">&#160;</td><td class="mdescRight">LED 1 en el pin D14, correspondiente a la activación de MONITOR.  <br /></td></tr>
+<tr class="separator:af02701d1ca210f5cee92c4a13f7b105d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e579ba7b7d816d8bb3d80787925b46e" id="r_a0e579ba7b7d816d8bb3d80787925b46e"><td class="memItemLeft" align="right" valign="top">DigitalOut&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e579ba7b7d816d8bb3d80787925b46e">led2</a> (D15)</td></tr>
+<tr class="memdesc:a0e579ba7b7d816d8bb3d80787925b46e"><td class="mdescLeft">&#160;</td><td class="mdescRight">LED 2 en el pin D15, correspondiente a la activación de PANIC.  <br /></td></tr>
+<tr class="separator:a0e579ba7b7d816d8bb3d80787925b46e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add69c4efbc5f42df77140ca9ae515304" id="r_add69c4efbc5f42df77140ca9ae515304"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add69c4efbc5f42df77140ca9ae515304">processStates</a> (void)</td></tr>
+<tr class="memdesc:add69c4efbc5f42df77140ca9ae515304"><td class="mdescLeft">&#160;</td><td class="mdescRight">Función para procesar los estados del sistema y manejar las transiciones entre ellos.  <br /></td></tr>
+<tr class="separator:add69c4efbc5f42df77140ca9ae515304"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf3d0f6e1a9dd64fb3ec03ec0e662bfe" id="r_adf3d0f6e1a9dd64fb3ec03ec0e662bfe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf3d0f6e1a9dd64fb3ec03ec0e662bfe">readButtons</a> ()</td></tr>
+<tr class="memdesc:adf3d0f6e1a9dd64fb3ec03ec0e662bfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lee el estado de los botones y procesa las acciones correspondientes.  <br /></td></tr>
+<tr class="separator:adf3d0f6e1a9dd64fb3ec03ec0e662bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71b3fe68424f96e92147d3692ddf76ed" id="r_a71b3fe68424f96e92147d3692ddf76ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71b3fe68424f96e92147d3692ddf76ed">handleMonitorState</a> ()</td></tr>
+<tr class="memdesc:a71b3fe68424f96e92147d3692ddf76ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maneja el estado MONITOR: envía 'm' y espera 'M'.  <br /></td></tr>
+<tr class="separator:a71b3fe68424f96e92147d3692ddf76ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fae1a12455ca198e32050c06cace659" id="r_a6fae1a12455ca198e32050c06cace659"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6fae1a12455ca198e32050c06cace659">handlePanicState</a> ()</td></tr>
+<tr class="memdesc:a6fae1a12455ca198e32050c06cace659"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maneja el estado PANIC: envía 'p' y espera 'P'.  <br /></td></tr>
+<tr class="separator:a6fae1a12455ca198e32050c06cace659"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae4cf76e8ff7c18b6d45fbc659e2ce1c" id="r_aae4cf76e8ff7c18b6d45fbc659e2ce1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae4cf76e8ff7c18b6d45fbc659e2ce1c">handleOffState</a> ()</td></tr>
+<tr class="memdesc:aae4cf76e8ff7c18b6d45fbc659e2ce1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maneja el estado OFF: envía 'o' y espera 'O' en cuyo caso se solicite apagar un estado anterior.  <br /></td></tr>
+<tr class="separator:aae4cf76e8ff7c18b6d45fbc659e2ce1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a82a8590c07d0cccf06a7bae6fb551e" id="r_a0a82a8590c07d0cccf06a7bae6fb551e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a82a8590c07d0cccf06a7bae6fb551e">processButtonPress</a> (DigitalIn &amp;button, bool &amp;isButtonPressed, <a class="el" href="#a808e5cd4979462d3bbe3070d7d147444">States</a> newState)</td></tr>
+<tr class="memdesc:a0a82a8590c07d0cccf06a7bae6fb551e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Procesa la pulsación de un botón y actualiza el estado del sistema según el botón presionado.  <br /></td></tr>
+<tr class="separator:a0a82a8590c07d0cccf06a7bae6fb551e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed565c768f7b161889bfe8bf681836dd" id="r_aed565c768f7b161889bfe8bf681836dd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed565c768f7b161889bfe8bf681836dd">processCommunication</a> (char expectedMsg, char sendMsg)</td></tr>
+<tr class="memdesc:aed565c768f7b161889bfe8bf681836dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Procesa la comunicación serie esperando un mensaje determinado y enviando un mensaje paricular.  <br /></td></tr>
+<tr class="separator:aed565c768f7b161889bfe8bf681836dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f01aa9c17968407f8523a9f75de5685" id="r_a6f01aa9c17968407f8523a9f75de5685"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f01aa9c17968407f8523a9f75de5685">resetStateVariables</a> ()</td></tr>
+<tr class="memdesc:a6f01aa9c17968407f8523a9f75de5685"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reinicia las variables de estado.  <br /></td></tr>
+<tr class="separator:a6f01aa9c17968407f8523a9f75de5685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad5ec35d54a2e2b683dec9f83a7158eb" id="r_aad5ec35d54a2e2b683dec9f83a7158eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad5ec35d54a2e2b683dec9f83a7158eb">updateLeds</a> (DigitalOut &amp;<a class="el" href="#af02701d1ca210f5cee92c4a13f7b105d">led1</a>, DigitalOut &amp;<a class="el" href="#a0e579ba7b7d816d8bb3d80787925b46e">led2</a>, bool normalState1, bool normalState2)</td></tr>
+<tr class="memdesc:aad5ec35d54a2e2b683dec9f83a7158eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actualiza el estado de los LEDs según las condiciones actuales.  <br /></td></tr>
+<tr class="separator:aad5ec35d54a2e2b683dec9f83a7158eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Función principal del programa.  <br /></td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aaf7e0389622e8f7b78393ee10d8e93a4" id="r_aaf7e0389622e8f7b78393ee10d8e93a4"><td class="memItemLeft" align="right" valign="top">Timer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf7e0389622e8f7b78393ee10d8e93a4">timer</a></td></tr>
+<tr class="memdesc:aaf7e0389622e8f7b78393ee10d8e93a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timer para la temporización general.  <br /></td></tr>
+<tr class="separator:aaf7e0389622e8f7b78393ee10d8e93a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dba4f913d4397edfb4551b76fa5cd04" id="r_a9dba4f913d4397edfb4551b76fa5cd04"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9dba4f913d4397edfb4551b76fa5cd04">isButtonFlagSet</a> = true</td></tr>
+<tr class="memdesc:a9dba4f913d4397edfb4551b76fa5cd04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bandera de estado de botón para setear OFF.  <br /></td></tr>
+<tr class="separator:a9dba4f913d4397edfb4551b76fa5cd04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d94f2cb7707b715a6030ddcd5f52cc0" id="r_a3d94f2cb7707b715a6030ddcd5f52cc0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d94f2cb7707b715a6030ddcd5f52cc0">wasButtonFlagSet</a> = false</td></tr>
+<tr class="memdesc:a3d94f2cb7707b715a6030ddcd5f52cc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estado previo de la bandera de botón.  <br /></td></tr>
+<tr class="separator:a3d94f2cb7707b715a6030ddcd5f52cc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf622566c00a4685e12e46fb948938db" id="r_acf622566c00a4685e12e46fb948938db"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf622566c00a4685e12e46fb948938db">isButton1Pressed</a> = false</td></tr>
+<tr class="memdesc:acf622566c00a4685e12e46fb948938db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estado de presión del botón 1.  <br /></td></tr>
+<tr class="separator:acf622566c00a4685e12e46fb948938db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70bac84bf5cc1d6f621b7d492183a34a" id="r_a70bac84bf5cc1d6f621b7d492183a34a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70bac84bf5cc1d6f621b7d492183a34a">isButton2Pressed</a> = false</td></tr>
+<tr class="memdesc:a70bac84bf5cc1d6f621b7d492183a34a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estado de presión del botón 2.  <br /></td></tr>
+<tr class="separator:a70bac84bf5cc1d6f621b7d492183a34a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac121b3ffcb46291c4cbf22889a48dfae" id="r_ac121b3ffcb46291c4cbf22889a48dfae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac121b3ffcb46291c4cbf22889a48dfae">isButton3Pressed</a> = false</td></tr>
+<tr class="memdesc:ac121b3ffcb46291c4cbf22889a48dfae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estado de presión del botón 3.  <br /></td></tr>
+<tr class="separator:ac121b3ffcb46291c4cbf22889a48dfae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af65434b03ee23b12bcbe096668cc4ee7" id="r_af65434b03ee23b12bcbe096668cc4ee7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af65434b03ee23b12bcbe096668cc4ee7">isReceiveMsg</a> = false</td></tr>
+<tr class="memdesc:af65434b03ee23b12bcbe096668cc4ee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bandera de estado para la recepción del mensaje.  <br /></td></tr>
+<tr class="separator:af65434b03ee23b12bcbe096668cc4ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54eaa2aa30ea04e526d829db6cf065c5" id="r_a54eaa2aa30ea04e526d829db6cf065c5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54eaa2aa30ea04e526d829db6cf065c5">confirmationReceived</a> = false</td></tr>
+<tr class="memdesc:a54eaa2aa30ea04e526d829db6cf065c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bandera de confirmación de mensaje recibido.  <br /></td></tr>
+<tr class="separator:a54eaa2aa30ea04e526d829db6cf065c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76b11ee8487b4b2888829c9082b4306a" id="r_a76b11ee8487b4b2888829c9082b4306a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76b11ee8487b4b2888829c9082b4306a">isOvertime</a> = false</td></tr>
+<tr class="memdesc:a76b11ee8487b4b2888829c9082b4306a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bandera de sobretiempo.  <br /></td></tr>
+<tr class="separator:a76b11ee8487b4b2888829c9082b4306a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a372f8e4da4e6149314fd5c8dd8ae578b" id="r_a372f8e4da4e6149314fd5c8dd8ae578b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a808e5cd4979462d3bbe3070d7d147444">States</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a372f8e4da4e6149314fd5c8dd8ae578b">currentState</a> = <a class="el" href="#a808e5cd4979462d3bbe3070d7d147444aac132f2982b98bcaa3445e535a03ff75">OFF</a></td></tr>
+<tr class="memdesc:a372f8e4da4e6149314fd5c8dd8ae578b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estado actual del sistema, inicialmente OFF.  <br /></td></tr>
+<tr class="separator:a372f8e4da4e6149314fd5c8dd8ae578b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3983760023b4cf5e64cc747a1d7a275" id="r_af3983760023b4cf5e64cc747a1d7a275"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a808e5cd4979462d3bbe3070d7d147444">States</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3983760023b4cf5e64cc747a1d7a275">lastState</a> = <a class="el" href="#a808e5cd4979462d3bbe3070d7d147444aac132f2982b98bcaa3445e535a03ff75">OFF</a></td></tr>
+<tr class="memdesc:af3983760023b4cf5e64cc747a1d7a275"><td class="mdescLeft">&#160;</td><td class="mdescRight">Último estado del sistema, inicialmente OFF.  <br /></td></tr>
+<tr class="separator:af3983760023b4cf5e64cc747a1d7a275"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab74af4db5c41f60e89f1c9b7947080c6" id="r_ab74af4db5c41f60e89f1c9b7947080c6"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab74af4db5c41f60e89f1c9b7947080c6">startTime</a> = 0</td></tr>
+<tr class="memdesc:ab74af4db5c41f60e89f1c9b7947080c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tiempo de inicio de temporización.  <br /></td></tr>
+<tr class="separator:ab74af4db5c41f60e89f1c9b7947080c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Programa que maneja el control de botones del usuario del sistema de seguridad. </p>
+<dl class="section author"><dt>Autor</dt><dd>BetsabeAilenRodriguez </dd></dl>
+</div><h2 class="groupheader">Documentación de «define»</h2>
+<a id="a121a2898ce852c8dd4e1c52fa05920fa" name="a121a2898ce852c8dd4e1c52fa05920fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a121a2898ce852c8dd4e1c52fa05920fa">&#9670;&#160;</a></span>BLINK_TIME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BLINK_TIME&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tiempo en segundos para el parpadeo de los LEDs en caso de error. </p>
+
+</div>
+</div>
+<a id="a457d8bc178b560f8ebb3b734480f28e1" name="a457d8bc178b560f8ebb3b734480f28e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a457d8bc178b560f8ebb3b734480f28e1">&#9670;&#160;</a></span>elapsed_t_s</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define elapsed_t_s</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>x</em></span></td><td>)</td>
+          <td>&#160;&#160;&#160;chrono::duration_cast&lt;chrono::seconds&gt;((x).elapsed_time()).count()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Macro para obtener el tiempo transcurrido en segundos desde el inicio de un timer. </p>
+<p>Esta macro utiliza chrono::duration_cast para convertir el tiempo transcurrido desde el inicio del timer <code>x</code> en segundos.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>El objeto timer del cual se desea obtener el tiempo transcurrido. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>El tiempo transcurrido en segundos como un valor entero. </dd></dl>
+
+</div>
+</div>
+<a id="a53d5515d5675d8c3efc6415fc76a68be" name="a53d5515d5675d8c3efc6415fc76a68be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53d5515d5675d8c3efc6415fc76a68be">&#9670;&#160;</a></span>LED_ON_OFF_TIME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LED_ON_OFF_TIME&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tiempo en segundos para indicar el estado OFF. </p>
+
+</div>
+</div>
+<a id="a5876a500afedd2b40bac024b88f30afe" name="a5876a500afedd2b40bac024b88f30afe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5876a500afedd2b40bac024b88f30afe">&#9670;&#160;</a></span>TIME_FOR_OVERTIME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TIME_FOR_OVERTIME&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tiempo en segundos para considerar sobretiempo en la comunicación. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de enumeraciones</h2>
+<a id="a808e5cd4979462d3bbe3070d7d147444" name="a808e5cd4979462d3bbe3070d7d147444"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a808e5cd4979462d3bbe3070d7d147444">&#9670;&#160;</a></span>States</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a808e5cd4979462d3bbe3070d7d147444">States</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enumera los posibles estados del sistema. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumeraciones</th></tr><tr><td class="fieldname"><a id="a808e5cd4979462d3bbe3070d7d147444aac132f2982b98bcaa3445e535a03ff75" name="a808e5cd4979462d3bbe3070d7d147444aac132f2982b98bcaa3445e535a03ff75"></a>OFF&#160;</td><td class="fielddoc"><p>Estado apagado. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a808e5cd4979462d3bbe3070d7d147444a92e8e1033650c9fd30199df2d6ec23e7" name="a808e5cd4979462d3bbe3070d7d147444a92e8e1033650c9fd30199df2d6ec23e7"></a>MONITOR&#160;</td><td class="fielddoc"><p>Estado de monitoreo. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a808e5cd4979462d3bbe3070d7d147444a7f43a3db33f9e81462140f2b734e955b" name="a808e5cd4979462d3bbe3070d7d147444a7f43a3db33f9e81462140f2b734e955b"></a>PANIC&#160;</td><td class="fielddoc"><p>Estado de pánico. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de funciones</h2>
+<a id="a98824ed142147e7ceac3b25260c388c1" name="a98824ed142147e7ceac3b25260c388c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98824ed142147e7ceac3b25260c388c1">&#9670;&#160;</a></span>button1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DigitalIn button1 </td>
+          <td>(</td>
+          <td class="paramtype">D4</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PullUp</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Botón 1 en el pin D4, correspondiente a la activación de MONITOR. </p>
+
+</div>
+</div>
+<a id="aed845c31be3218d06e388ad3e0997992" name="aed845c31be3218d06e388ad3e0997992"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed845c31be3218d06e388ad3e0997992">&#9670;&#160;</a></span>button2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DigitalIn button2 </td>
+          <td>(</td>
+          <td class="paramtype">D5</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PullUp</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Botón 2 en el pin D5, correspondiente a la activación de PANIC. </p>
+
+</div>
+</div>
+<a id="abc0ad72d305e2eba32ced522304524f9" name="abc0ad72d305e2eba32ced522304524f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc0ad72d305e2eba32ced522304524f9">&#9670;&#160;</a></span>button3()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DigitalIn button3 </td>
+          <td>(</td>
+          <td class="paramtype">D3</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PullUp</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Botón 3 en el pin D3, correspondiente a la activación de OFF. </p>
+
+</div>
+</div>
+<a id="a71b3fe68424f96e92147d3692ddf76ed" name="a71b3fe68424f96e92147d3692ddf76ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71b3fe68424f96e92147d3692ddf76ed">&#9670;&#160;</a></span>handleMonitorState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void handleMonitorState </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maneja el estado MONITOR: envía 'm' y espera 'M'. </p>
+<p>Si no se ha recibido una confirmación previa, intenta procesar la comunicación esperando una respuesta específica. Actualiza los LEDs según el tiempo transcurrido.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="aae4cf76e8ff7c18b6d45fbc659e2ce1c" name="aae4cf76e8ff7c18b6d45fbc659e2ce1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae4cf76e8ff7c18b6d45fbc659e2ce1c">&#9670;&#160;</a></span>handleOffState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void handleOffState </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maneja el estado OFF: envía 'o' y espera 'O' en cuyo caso se solicite apagar un estado anterior. </p>
+<p>Este estado, tiene dos funcionalidades, como OFF para apagar el estado anterior o como OFF para finalizar la comunicación. Si no se ha recibido una confirmación previa, intenta procesar la comunicación esperando una respuesta específica. Actualiza los estados normales y el estado del LED según el tiempo transcurrido.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a6fae1a12455ca198e32050c06cace659" name="a6fae1a12455ca198e32050c06cace659"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fae1a12455ca198e32050c06cace659">&#9670;&#160;</a></span>handlePanicState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void handlePanicState </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maneja el estado PANIC: envía 'p' y espera 'P'. </p>
+<p>Si no se ha recibido una confirmación previa, intenta procesar la comunicación esperando una respuesta específica. Actualiza los LEDs según el tiempo transcurrido.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="af02701d1ca210f5cee92c4a13f7b105d" name="af02701d1ca210f5cee92c4a13f7b105d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af02701d1ca210f5cee92c4a13f7b105d">&#9670;&#160;</a></span>led1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DigitalOut led1 </td>
+          <td>(</td>
+          <td class="paramtype">D14</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>LED 1 en el pin D14, correspondiente a la activación de MONITOR. </p>
+
+</div>
+</div>
+<a id="a0e579ba7b7d816d8bb3d80787925b46e" name="a0e579ba7b7d816d8bb3d80787925b46e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e579ba7b7d816d8bb3d80787925b46e">&#9670;&#160;</a></span>led2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DigitalOut led2 </td>
+          <td>(</td>
+          <td class="paramtype">D15</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>LED 2 en el pin D15, correspondiente a la activación de PANIC. </p>
+
+</div>
+</div>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Función principal del programa. </p>
+<p>Esta función inicializa los componentes necesarios, configura el puerto serial y el temporizador, y luego entra en un bucle infinito donde procesa los estados del sistema.</p>
+<dl class="section return"><dt>Devuelve</dt><dd>int El valor de retorno representa el éxito de la aplicación. </dd></dl>
+
+</div>
+</div>
+<a id="a0a82a8590c07d0cccf06a7bae6fb551e" name="a0a82a8590c07d0cccf06a7bae6fb551e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a82a8590c07d0cccf06a7bae6fb551e">&#9670;&#160;</a></span>processButtonPress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void processButtonPress </td>
+          <td>(</td>
+          <td class="paramtype">DigitalIn &amp;</td>          <td class="paramname"><span class="paramname"><em>button</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;</td>          <td class="paramname"><span class="paramname"><em>isButtonPressed</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a808e5cd4979462d3bbe3070d7d147444">States</a></td>          <td class="paramname"><span class="paramname"><em>newState</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Procesa la pulsación de un botón y actualiza el estado del sistema según el botón presionado. </p>
+<p>Si el botón está presionado y no se ha registrado como presionado previamente, actualiza el estado actual ("currentState") al nuevo estado especificado ("newState"), y marca el botón como presionado.</p>
+<p>Si el botón se libera, marca el botón como no presionado.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">button</td><td>Referencia a un objeto <code>DigitalIn</code> que representa el botón a monitorear. </td></tr>
+    <tr><td class="paramname">isButtonPressed</td><td>Referencia a una variable booleana que indica si el botón está presionado. </td></tr>
+    <tr><td class="paramname">newState</td><td>Estado al que se transicionará si el botón es presionado. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="aed565c768f7b161889bfe8bf681836dd" name="aed565c768f7b161889bfe8bf681836dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed565c768f7b161889bfe8bf681836dd">&#9670;&#160;</a></span>processCommunication()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool processCommunication </td>
+          <td>(</td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>expectedMsg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>sendMsg</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Procesa la comunicación serie esperando un mensaje determinado y enviando un mensaje paricular. </p>
+<p>Esta función gestiona la comunicación serie enviando un mensaje y esperando una respuesta específica dentro de un tiempo determinado. Si se recibe el mensaje esperado, actualiza el estado del sistema según sea necesario.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">expectedMsg</td><td>Mensaje esperado. </td></tr>
+    <tr><td class="paramname">sendMsg</td><td>Mensaje a enviar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>true si se recibió el mensaje esperado, false si no. </dd></dl>
+
+</div>
+</div>
+<a id="add69c4efbc5f42df77140ca9ae515304" name="add69c4efbc5f42df77140ca9ae515304"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add69c4efbc5f42df77140ca9ae515304">&#9670;&#160;</a></span>processStates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void processStates </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Función para procesar los estados del sistema y manejar las transiciones entre ellos. </p>
+<p>Esta función lee los botones, gestiona las variables de estado y ejecuta las funciones correspondientes según el estado actual del sistema. También gestiona las transiciones entre estados y actualiza las variables de estado necesarias para cada estado.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="adf3d0f6e1a9dd64fb3ec03ec0e662bfe" name="adf3d0f6e1a9dd64fb3ec03ec0e662bfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf3d0f6e1a9dd64fb3ec03ec0e662bfe">&#9670;&#160;</a></span>readButtons()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void readButtons </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lee el estado de los botones y procesa las acciones correspondientes. </p>
+<p>Esta función llama a la función <code>processButtonPress</code> para cada botón específico, actualizando el estado de la aplicación según el botón presionado.</p>
+<dl class="section see"><dt>Ver también</dt><dd><a class="el" href="#a0a82a8590c07d0cccf06a7bae6fb551e" title="Procesa la pulsación de un botón y actualiza el estado del sistema según el botón presionado.">processButtonPress</a> </dd></dl>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a6f01aa9c17968407f8523a9f75de5685" name="a6f01aa9c17968407f8523a9f75de5685"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f01aa9c17968407f8523a9f75de5685">&#9670;&#160;</a></span>resetStateVariables()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void resetStateVariables </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reinicia las variables de estado. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">none</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="aad5ec35d54a2e2b683dec9f83a7158eb" name="aad5ec35d54a2e2b683dec9f83a7158eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad5ec35d54a2e2b683dec9f83a7158eb">&#9670;&#160;</a></span>updateLeds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void updateLeds </td>
+          <td>(</td>
+          <td class="paramtype">DigitalOut &amp;</td>          <td class="paramname"><span class="paramname"><em>led1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DigitalOut &amp;</td>          <td class="paramname"><span class="paramname"><em>led2</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>normalState1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>normalState2</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Actualiza el estado de los LEDs según las condiciones actuales. </p>
+<p>Si el sistema está en sobretiempo, los LEDs parpadean a intervalos definidos. De lo contrario, los LEDs se establecen en los estados normales proporcionados.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">led1</td><td>Referencia a DigitalOut para el LED 1. </td></tr>
+    <tr><td class="paramname">led2</td><td>Referencia a DigitalOut para el LED 2. </td></tr>
+    <tr><td class="paramname">normalState1</td><td>Estado normal del LED 1. </td></tr>
+    <tr><td class="paramname">normalState2</td><td>Estado normal del LED 2. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de variables</h2>
+<a id="a54eaa2aa30ea04e526d829db6cf065c5" name="a54eaa2aa30ea04e526d829db6cf065c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54eaa2aa30ea04e526d829db6cf065c5">&#9670;&#160;</a></span>confirmationReceived</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool confirmationReceived = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bandera de confirmación de mensaje recibido. </p>
+
+</div>
+</div>
+<a id="a372f8e4da4e6149314fd5c8dd8ae578b" name="a372f8e4da4e6149314fd5c8dd8ae578b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a372f8e4da4e6149314fd5c8dd8ae578b">&#9670;&#160;</a></span>currentState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a808e5cd4979462d3bbe3070d7d147444">States</a> currentState = <a class="el" href="#a808e5cd4979462d3bbe3070d7d147444aac132f2982b98bcaa3445e535a03ff75">OFF</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Estado actual del sistema, inicialmente OFF. </p>
+
+</div>
+</div>
+<a id="acf622566c00a4685e12e46fb948938db" name="acf622566c00a4685e12e46fb948938db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf622566c00a4685e12e46fb948938db">&#9670;&#160;</a></span>isButton1Pressed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isButton1Pressed = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Estado de presión del botón 1. </p>
+
+</div>
+</div>
+<a id="a70bac84bf5cc1d6f621b7d492183a34a" name="a70bac84bf5cc1d6f621b7d492183a34a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70bac84bf5cc1d6f621b7d492183a34a">&#9670;&#160;</a></span>isButton2Pressed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isButton2Pressed = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Estado de presión del botón 2. </p>
+
+</div>
+</div>
+<a id="ac121b3ffcb46291c4cbf22889a48dfae" name="ac121b3ffcb46291c4cbf22889a48dfae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac121b3ffcb46291c4cbf22889a48dfae">&#9670;&#160;</a></span>isButton3Pressed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isButton3Pressed = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Estado de presión del botón 3. </p>
+
+</div>
+</div>
+<a id="a9dba4f913d4397edfb4551b76fa5cd04" name="a9dba4f913d4397edfb4551b76fa5cd04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dba4f913d4397edfb4551b76fa5cd04">&#9670;&#160;</a></span>isButtonFlagSet</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isButtonFlagSet = true</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bandera de estado de botón para setear OFF. </p>
+
+</div>
+</div>
+<a id="a76b11ee8487b4b2888829c9082b4306a" name="a76b11ee8487b4b2888829c9082b4306a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76b11ee8487b4b2888829c9082b4306a">&#9670;&#160;</a></span>isOvertime</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isOvertime = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bandera de sobretiempo. </p>
+
+</div>
+</div>
+<a id="af65434b03ee23b12bcbe096668cc4ee7" name="af65434b03ee23b12bcbe096668cc4ee7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af65434b03ee23b12bcbe096668cc4ee7">&#9670;&#160;</a></span>isReceiveMsg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isReceiveMsg = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bandera de estado para la recepción del mensaje. </p>
+
+</div>
+</div>
+<a id="af3983760023b4cf5e64cc747a1d7a275" name="af3983760023b4cf5e64cc747a1d7a275"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3983760023b4cf5e64cc747a1d7a275">&#9670;&#160;</a></span>lastState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#a808e5cd4979462d3bbe3070d7d147444">States</a> lastState = <a class="el" href="#a808e5cd4979462d3bbe3070d7d147444aac132f2982b98bcaa3445e535a03ff75">OFF</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Último estado del sistema, inicialmente OFF. </p>
+
+</div>
+</div>
+<a id="ab74af4db5c41f60e89f1c9b7947080c6" name="ab74af4db5c41f60e89f1c9b7947080c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab74af4db5c41f60e89f1c9b7947080c6">&#9670;&#160;</a></span>startTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto startTime = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tiempo de inicio de temporización. </p>
+
+</div>
+</div>
+<a id="aaf7e0389622e8f7b78393ee10d8e93a4" name="aaf7e0389622e8f7b78393ee10d8e93a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf7e0389622e8f7b78393ee10d8e93a4">&#9670;&#160;</a></span>timer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Timer timer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Timer para la temporización general. </p>
+
+</div>
+</div>
+<a id="a3d94f2cb7707b715a6030ddcd5f52cc0" name="a3d94f2cb7707b715a6030ddcd5f52cc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d94f2cb7707b715a6030ddcd5f52cc0">&#9670;&#160;</a></span>wasButtonFlagSet</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool wasButtonFlagSet = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Estado previo de la bandera de botón. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>
